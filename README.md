@@ -7,17 +7,21 @@
 ## English
 
 ### Goal
+
 Analyze inventory and sales of a fictional store using SQL and Pandas. All data is 100% synthetic (no real people, no personal data). The project shows entry-level data analysis: JOIN, GROUP BY, filters and charts.
 
 ### Tools
+
 Python, Pandas, SQLite (`sqlite3`), Matplotlib, Jupyter Notebook. All free and lightweight.
 
 ### How to run
+
 1. Open `notebook.ipynb` (Kaggle or Jupyter).
 2. Run all cells in order. The first cell installs dependencies.
 3. The code generates the data (fixed seed) and recreates the SQLite database from scratch on every run, so results are always the same.
 
 ### Folder structure
+
 ```
 estoque-vendas/
 ├── notebook.ipynb     # full analysis (steps 1 to 4)
@@ -29,23 +33,34 @@ estoque-vendas/
 ```
 
 ### Database (SQLite)
+
 - `produtos`: id, nome, categoria, preço, custo
 - `clientes`: id, cidade
 - `vendas`: id, data, id_produto, id_cliente, quantidade
 - `estoque`: id_produto, quantidade_atual, estoque_minimo
 
 ### Results
-| # | Question | Answer |
-|---|----------|--------|
-| 1 | Top 5 best-selling products | **[FILL IN]** |
-| 2 | Most profitable category (price - cost) | **[FILL IN]** |
-| 3 | Products below minimum stock | **[FILL IN]** products |
-| 4 | Best sales month | **[FILL IN]** |
-| 5 | City that buys the most | **[FILL IN]** |
 
-![Top 5 products](img/[FILE-NAME].png)
+| # | Question                                | Answer                                                              |
+|---|-----------------------------------------|---------------------------------------------------------------------|
+| 1 | Top 5 best-selling products             | Refrigerante 2L, Manteiga 200g, Bolo de cenoura, Feijão 1kg, Pão francês 1kg |
+| 2 | Most profitable category (price - cost) | **Padaria** (R$ 6,249.32)                                           |
+| 3 | Products below minimum stock            | **8** products                                                      |
+| 4 | Best sales month                        | **2025-12** (R$ 10,255.50)                                          |
+| 5 | City that buys the most                 | **São Paulo** (R$ 33,382.30)                                        |
+
+![Top 5 products](img/top5_produtos.png)
+
+![Profit by category](img/lucro_categoria.png)
+
+![Revenue by month](img/faturamento_mes.png)
+
+![Units missing below minimum stock](img/unidades_faltando.png)
+
+![Revenue by city](img/faturamento_cidade.png)
 
 ### What I learned
+
 - Joining 3+ tables with `JOIN` and summarizing with `GROUP BY`.
 - Calculating profit (price - cost) in SQL.
 - Making the notebook reproducible: fixed seed and database recreated on each run.
@@ -56,17 +71,21 @@ estoque-vendas/
 ## Português
 
 ### Objetivo
+
 Analisar estoque e vendas de uma loja fictícia usando SQL e Pandas. Todos os dados são 100% sintéticos (sem pessoas reais, sem dados pessoais). O projeto mostra análise de dados em nível de entrada: JOIN, GROUP BY, filtros e gráficos.
 
 ### Ferramentas
+
 Python, Pandas, SQLite (`sqlite3`), Matplotlib, Jupyter Notebook. Tudo gratuito e leve.
 
 ### Como executar
+
 1. Abra o `notebook.ipynb` (Kaggle ou Jupyter).
 2. Rode todas as células em ordem. A primeira célula instala as dependências.
 3. O código gera os dados (seed fixa) e recria o banco SQLite do zero a cada execução, então o resultado é sempre o mesmo.
 
 ### Estrutura de pastas
+
 ```
 estoque-vendas/
 ├── notebook.ipynb     # análise completa (etapas 1 a 4)
@@ -78,23 +97,34 @@ estoque-vendas/
 ```
 
 ### Banco de dados (SQLite)
+
 - `produtos`: id, nome, categoria, preço, custo
 - `clientes`: id, cidade
 - `vendas`: id, data, id_produto, id_cliente, quantidade
 - `estoque`: id_produto, quantidade_atual, estoque_minimo
 
 ### Resultados
-| # | Pergunta | Resposta |
-|---|----------|----------|
-| 1 | 5 produtos que mais vendem | **[PREENCHER]** |
-| 2 | Categoria mais lucrativa (preço - custo) | **[PREENCHER]** |
-| 3 | Produtos abaixo do estoque mínimo | **[PREENCHER]** produtos |
-| 4 | Mês que mais vendeu | **[PREENCHER]** |
-| 5 | Cidade que mais compra | **[PREENCHER]** |
 
-![Top 5 produtos](img/[NOME-DO-ARQUIVO].png)
+| # | Pergunta                                 | Resposta                                                            |
+|---|------------------------------------------|---------------------------------------------------------------------|
+| 1 | 5 produtos que mais vendem               | Refrigerante 2L, Manteiga 200g, Bolo de cenoura, Feijão 1kg, Pão francês 1kg |
+| 2 | Categoria mais lucrativa (preço - custo) | **Padaria** (R$ 6.249,32)                                           |
+| 3 | Produtos abaixo do estoque mínimo        | **8** produtos                                                      |
+| 4 | Mês que mais vendeu                      | **2025-12** (R$ 10.255,50)                                          |
+| 5 | Cidade que mais compra                   | **São Paulo** (R$ 33.382,30)                                        |
+
+![Top 5 produtos](img/top5_produtos.png)
+
+![Lucro por categoria](img/lucro_categoria.png)
+
+![Faturamento por mês](img/faturamento_mes.png)
+
+![Unidades faltando abaixo do estoque mínimo](img/unidades_faltando.png)
+
+![Faturamento por cidade](img/faturamento_cidade.png)
 
 ### Aprendizados
+
 - Juntar 3 ou mais tabelas com `JOIN` e resumir com `GROUP BY`.
 - Calcular lucro (preço - custo) direto no SQL.
 - Deixar o notebook reproduzível: seed fixa e banco recriado a cada execução.
