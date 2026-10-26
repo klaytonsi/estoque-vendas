@@ -6,6 +6,8 @@
 
 ## English
 
+# Kaggle notebook: https://www.kaggle.com/code/klaytonsilva/notebook6c72d42c00
+
 ### Goal
 
 Analyze inventory and sales of a fictional store using SQL and Pandas. All data is 100% synthetic (no real people, no personal data). The project shows entry-level data analysis: JOIN, GROUP BY, filters and charts.
@@ -69,6 +71,8 @@ estoque-vendas/
 ---
 
 ## Português
+
+# Kaggle notebook: https://www.kaggle.com/code/klaytonsilva/notebook6c72d42c00
 
 ### Objetivo
 
